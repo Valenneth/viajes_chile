@@ -71,3 +71,33 @@ html {
 .card-text {
   color: white;
 }
+
+.contacto {
+  background-color: black;
+}
+
+.form-label {
+  color: white;
+}
+footer {
+  background-color: darkturquoise;
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.rrss {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  height: auto;
+}
+.logo-bot {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  height: auto;
+}
+.icono {
+  padding-right: 1rem;
+}

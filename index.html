@@ -157,14 +157,14 @@
       </div>
             </div>       
     </section>
-    <section class="destacados mt-0">
+<!-- SECCION DESTACADOS -->
+    <section class="destacados pt-5">
       <h2 class="text-white text-center pb-3">Destacados</h2>
       <div class="container decoracion"><hr class="linea"></hr></div>
-      
-        <div class="desc container">
+              <div class="desc container">
           <div class="row mt-5">
-            <!-- contenido tarjetas -->
-            <div class="col-12 col-md-3">
+<!-- contenido tarjetas -->
+            <div class="col-12 col-md-3 d-flex justify-content-center pb-3">
               <div class="card" style="width: 18rem;">
                 <img src="assets/img/card1.jpg" class="card-img-top" alt="card1">
                 <div class="card-body">
@@ -173,7 +173,7 @@
               </div>
             </div>
 
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-3 d-flex justify-content-center pb-3">
               <div class="card" style="width: 18rem;">
                 <img src="assets/img/card2.jpg" class="card-img-top" alt="card2">
                 <div class="card-body">
@@ -182,7 +182,7 @@
               </div>
             </div>
 
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-3 d-flex justify-content-center pb-3">
               <div class="card" style="width: 18rem;">
                 <img src="assets/img/card3.jpg" class="card-img-top" alt="card3">
                 <div class="card-body">
@@ -191,7 +191,7 @@
               </div>
             </div>
 
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-3 d-flex justify-content-center pb-3">
               <div class="card" style="width: 18rem;">
                 <img src="assets/img/card4.jpg" class="card-img-top" alt="card4">
                 <div class="card-body">
@@ -201,8 +201,55 @@
             </div>
           </div>
         </div>
-
     </section>
+<!-- FORM CONTACTO -->
+<section class="contacto">
+  <div class="container col-12 pt-5 pb-5">
+    <h2 class="text-white text-center pb-3">Contacto</h2>
+    <form>
+      <div class="mb-3">
+        <label for="text" class="form-label">Nombre</label>
+        <input placeholder="Nombre" type="text" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Correo Electrónico</label>
+        <input
+          placeholder="Correo Electrónico"
+          type="email"
+          class="form-control"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="text" class="form-label">Mensaje</label>
+        <textarea
+          id="exampleFormControlTextarea1"
+          rows="6"
+          class="form-control"
+          placeholder="Escribe aquí tu mensaje"
+        ></textarea>
+      </div>
+
+      <div class="text-start">
+        <button type="submit" class="btn btn-info text-white">Enviar</button>
+      </div>
+    </form>
+  </div>
+</section>
+<!-- FOOTER -->
+<footer>
+  <div class="container-fluid b-icons">
+    <div class="row">
+      <div class="col-12 col-md-6 logo-bot pb-3"><h1>Viajes Chile</h1></div>
+      <div class="col-12 col-md-6 rrss">
+        <i class="fa-brands fa-square-github fa-2xl icono my-auto"></i>
+        <i class="fa-brands fa-linkedin icono  fa-2xl my-auto"></i>
+        <i class="fa-brands fa-square-x-twitter fa-2xl icono my-auto "></i>
+        <i class="fa-brands fa-square-facebook  fa-2xl icono my-auto"></i>
+      </div>
+    </div>
+  </div>
+</footer>
         <script src="assets/js/scripts.js"></script>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script
