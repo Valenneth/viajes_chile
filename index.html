@@ -41,15 +41,15 @@
   </head>
   <body>
     <!-- nav -->
-    <nav class="navbar navbar-expand-lg bg-transparent">
-      <div class="container navegador">
-        <a class="navbar-brand">
+    <nav class="navbar navbar-expand-lg bg-none fixed-top">
+      <div class="container-fluid">
+        <div class="logo-nav d-flex ms-5">
           <img src="assets/img/viajes.svg" alt="logo-viajes" class="logo" />
-          <!--           <h1>Viajes Chile</h1>   -->
-        </a>
+          <h1>Viajes Chile</h1>
+        </div>
 
         <button
-          class="navbar-toggler"
+          class="navbar-toggler ms-auto"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -59,24 +59,60 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse navegador" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-5">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active text-white" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Quiénes Somos</a>
+              <a class="nav-link text-white" href="#">Quiénes Somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Destacados</a>
+              <a class="nav-link text-white" href="#">Destacados</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Contacto</a>
+              <a class="nav-link text-white">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <!-- CAROUSEL -->
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
     <script src="assets/js/scripts.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
