@@ -30,6 +30,15 @@ html {
 .decoracion {
   width: 60%;
 }
+.linea {
+  border: none;
+  height: 0.1rem;
+  background: white;
+  width: 100%;
+  opacity: 100;
+  margin: 0;
+  margin-bottom: 3rem;
+}
 .about {
   padding-top: 3rem;
   color: white;
@@ -46,4 +55,19 @@ html {
 .descripciones {
   display: flex;
   justify-content: center;
+}
+
+.destacados {
+  background-color: black;
+}
+
+.card-img-top {
+  height: 10rem;
+}
+
+.card-body {
+  background-color: darkturquoise;
+}
+.card-text {
+  color: white;
 }
