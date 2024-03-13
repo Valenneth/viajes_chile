@@ -1,16 +1,37 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const links = document.querySelectorAll('a[href^="#"]');
+const tooltipTriggerList = document.querySelectorAll(
+  '[data-bs-toggle="tooltip"]'
+);
+const tooltipList = [...tooltipTriggerList].map(
+  (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+);
 
-    links.forEach(link => {
-        link.addEventListener("click", function(e) {
-            e.preventDefault();
+$(document).ready(function () {
+  $(a).on("click", function (event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
 
-            const targetId = this.getAttribute("href").substring(1);
-            const targetElement = document.getElementById(targetId);
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top,
+        },
+        800,
+        function () {
+          window.location.hash = hash;
+        }
+      );
+    }
+  });
+});
 
-            targetElement.scrollIntoView({
-                behavior: "smooth"
-            });
-        });
-    });
+document.addEventListener("scroll", function () {
+  var navbar = document.getElementById("navbar");
+
+  var scrollPosition = window.scrollY;
+
+  if (scrollPosition > 10) {
+    navbar.style.backgroundColor = "#000";
+  } else {
+    navbar.style.backgroundColor = "transparent";
+  }
 });
