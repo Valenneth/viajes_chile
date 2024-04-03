@@ -1,0 +1,49 @@
+.form-label {
+	color: white;
+}
+
+.form__container {
+	padding: 2rem;
+	padding-left: 5rem;
+	padding-right: 5rem;
+}
+.name {
+	width: 90%;
+}
+
+.contact-info__container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding-left: 5rem;
+	padding-right: 5rem;
+
+	li {
+		list-style-type: none;
+		margin-bottom: 1rem;
+	}
+}
+.custom-tooltip {
+	--bs-tooltip-bg: #fff;
+	--bs-tooltip-color: #000;
+}
+
+@media only screen and (min-width: 920px) {
+	.contact {
+		margin-left: 5rem;
+		margin-right: 5rem;
+	}
+
+	.contact-info__container {
+		display: flex;
+		align-items: center;
+		justify-content: left;
+		text-align: left;
+		padding-left: 3rem;
+		padding-right: 3rem;
+		ul {
+			padding-bottom: 4rem;
+		}
+	}
+}

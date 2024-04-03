@@ -1,0 +1,16 @@
+.logo {
+	width: 4%;
+}
+#navbar {
+	background-color: transparent; /* Color de fondo inicial (transparente) */
+	transition: background-color 0.5s ease; /* Efecto de transición suave */
+}
+
+.logo-nav h1 {
+	font-size: 1.5rem;
+	margin-left: 2%;
+	margin-top: 1%;
+	color: white;
+	text-decoration: none;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,25 @@
+.about__img {
+	width: 80%;
+	height: auto;
+	border-radius: 10px;
+}
+
+.container__text {
+	flex-direction: column;
+
+	p {
+		width: 80%;
+		height: auto;
+		padding-bottom: 2rem;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.container__text {
+		align-items: center;
+		padding-top: 1.5rem;
+		p {
+			text-align: center;
+		}
+	}
+}
